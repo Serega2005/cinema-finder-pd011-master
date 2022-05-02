@@ -1,0 +1,186 @@
+
+* {
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+    margin: 0;
+    background-color: lightyellow;
+}
+
+h1, h2 {
+    font-size: 24px;
+    text-align: center;
+}
+
+#input-container {    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 320px;
+    height: 190px;
+    margin: 40px auto;
+    padding: 20px;
+    border: 1px solid rgb(50, 50, 50);
+    border-radius: 6px;
+    background-color: rgb(172 185 224);
+    box-shadow: 2px 2px 10px -10px black;
+}
+
+.control-container {
+    display: flex;
+    justify-content: space-between;
+}
+.control-container input,
+.control-container select {
+    width: 70%;
+}
+
+#search-button {
+    padding: 2px 0;
+    border: 1px solid rgb(2, 30, 104);
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#status-output {
+    text-align: center;
+    margin: 12px 0;
+}
+
+
+#search-results-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.cinema-card {
+    display: flex;
+    width: 260px;
+    height: 160px;
+    margin: 12px;
+    padding: 10px;
+    border: 1px solid rgb(50, 50, 50);
+    border-radius: 4px;
+    background-color: rgb(255 219 154);
+    box-shadow: 2px 2px 10px -10px black;
+    cursor: pointer;
+}
+
+
+.cinema-card .poster {
+    overflow: hidden;
+}
+.cinema-card .poster img {
+    height: 100%;
+}
+
+.cinema-card .info {
+    width: 100px;
+    margin-left: 16px;
+    overflow: auto;
+    flex-grow: 1;
+}
+
+.cinema-card .rating-favorite-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.cinema-card .favorite-icon {
+    width: 16px;
+    height: 16px;
+    background-image: url('icons/favorite.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 14px;
+    transition: .2s;
+}
+
+.cinema-card .active {
+    background-image: url('icons/favorite-active.png');
+}
+
+.cinema-card .rating {
+    margin: 0;
+    font-size: 10px;
+}
+
+.cinema-card .title {
+    margin: 6px 0 10px;
+    font-size: 14px;
+}
+
+.cinema-card .year {
+    margin-bottom: 10px;
+    font-size: 12px;
+}
+
+
+#fixed-container {
+    position: fixed;
+    z-index: 10;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#cinema-full-card {
+    display: flex;
+    width: 800px;
+    height: 500px;
+    padding: 20px;
+    border: 1px solid rgb(50, 50, 50);
+    border-radius: 6px;
+    background-color: rgb(248, 248, 202);
+    box-shadow: 3px 3px 10px -8px black;
+}
+
+#cinema-full-card .poster {
+    display: flex;
+    align-items: center;
+}
+#cinema-full-card img {
+    height: 100%;
+    border-radius: 4px;
+}
+
+#cinema-full-card .info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 26px;
+    margin-right: 10px;
+}
+
+#cinema-full-card .info * {
+    margin: 12px 0;
+}
+
+#cinema-full-card button {
+    align-self: flex-start;
+    cursor: pointer;
+    font-size: 26px;
+    border: none;
+    background-color: transparent;
+}
+
+
+/* Модуль FlexBox
+
+Flexbox | W3Schools.com
+https://www.w3schools.com/css/css3_flexbox.asp
+
+FLEXBOX FROGGY
+http://flexboxfroggy.com/#ru
+
+A Complete Guide to Flexbox | CSS-Tricks.com
+https://css-tricks.com/snippets/css/a-guide-to-flexbox/ */

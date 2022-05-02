@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <title>Cinema Finder</title>
+</head>
+<body>
+
+    <h1>Cinema Finder</h1>
+
+    <div id="input-container">
+        <div class="control-container">
+            <label for="title-input">Title:</label>
+            <input
+                type="text"
+                id="title-input"
+                placeholder="Enter title"
+                title="Enter title without repeating. Title starts with letters and digits."
+            >
+        </div>
+
+        <div class="control-container">
+            <label for="type-select">Type:</label>
+            <select id="type-select">
+                <option value="film">Films</option>
+                <option value="tv_show">TV Show</option>
+                <option value="all">All</option>
+            </select>
+        </div>
+
+        <div class="control-container">
+            <label for="genre-select">Genre:</label>
+            <select id="genre-select">
+                <option value="1">Триллер</option>
+                <option value="2">Драма</option>
+                <option value="3">Криминал</option>
+                <option value="4">Детектив</option>
+                <option value="5">Фантастика</option>
+                <option value="24">Аниме</option>
+            </select>
+        </div>
+
+        <div class="control-container">
+            <label for="countriesSelect">Countries:</label>
+            <select id="countriesSelect">
+                <option value="1">США</option>
+                <option value="9">Германия</option>
+                <option value="16">Япония</option>
+                <option value="34">Россия</option>
+            </select>
+        </div>
+        
+        <button id="search-button">Search</button>
+    </div>
+
+    <h2>Сортировка: по рейтингу</h2>
+
+    <h3 id="status-output"></h3>
+
+    <div id="search-results-container"></div>
+    
+</body>
+</html>
