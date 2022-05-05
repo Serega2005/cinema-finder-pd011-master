@@ -90,17 +90,15 @@ async function processInitialSearchRequest() {
     const response = await getCinemaInfo(url);
     console.log('response :>> ', response);
     
-    if(response.countries == countries){
-        // Получение верного ответа с сервера
-        const searchResults = response.items;
+    // Получение верного ответа с сервера
+    const searchResults = response.items;
 
-        // Сохранение в массив всех результатов поиска
-        generalSearchResults = [];
-        generalSearchResults = generalSearchResults.concat(searchResults);
+    // Сохранение в массив всех результатов поиска
+    generalSearchResults = [];
+    generalSearchResults = generalSearchResults.concat(searchResults);
         
-        // Обработка результатов поиска
-        processSearchResults(searchResults);
-    }
+    // Обработка результатов поиска
+    processSearchResults(searchResults);
 }
 
 
