@@ -150,11 +150,11 @@ function processSearchResults(searchResults) {
     for (const cinemaInfo of searchResults) {
 
         // Деструктуризация объекта фильма
-        if (Object.titleEn != null) {
-            Object.title = Object.titleEn;
-        } else if (Object.titleRu != null) {
-            Object.title = Object.titleRu;
-        }
+        // if (Object.titleEn != null) {
+        //     Object.title = Object.titleEn;
+        // } else if (Object.titleRu != null) {
+        //     Object.title = Object.titleRu;
+        // }
         const { posterUrlPreview: poster, nameOriginal: title,
             ratingKinopoisk: rating, year, kinopoiskId } = cinemaInfo;
     
