@@ -150,15 +150,14 @@ function processSearchResults(searchResults) {
     for (const cinemaInfo of searchResults) {
 
         // Деструктуризация объекта фильма
-        // if (nameEn != null) {
-        //     nameOriginal.title = nameEn.title
-        // } else if (nameRu != null) {
-        //     nameOriginal.title = nameRu.title
-        // }
-
+        if (Object.titleEn != null) {
+            Object.title = Object.titleEn;
+        } else if (Object.titleRu != null) {
+            Object.title = Object.titleRu;
+        }
         const { posterUrlPreview: poster, nameOriginal: title,
             ratingKinopoisk: rating, year, kinopoiskId } = cinemaInfo;
-
+    
             const isFavorite = favoritesIDs.includes(String(kinopoiskId));
         
 
